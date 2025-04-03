@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc} % Ensure UTF-8 encoding.
+\usepackage[style=mla, backend=biber]{biblatex}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{mathptmx}
+%\usepackage{fontspec}          % Comment out mathptmx and decomment these two lines
+%\setmainfont{Times New Roman}  % if Times New Roman is necessary
+\addbibresource{$BIB}
+
+\doublespacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{<++> \thepage} % Last name
+
+\begin{document}
+
+\noindent <++> \\ % Name
+<++> \\ % Teacher's name
+<++> \\ % Course name
+\today
+
+\begin{center}
+  \textbf{<++>} % Title
+\end{center}
+
+
+\newpage
+\begin{center}
+  \textbf{Works Cited}
+\end{center}
+
+\printbibliography
+
+\end{document}
